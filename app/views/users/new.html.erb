@@ -1,7 +1,5 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
 
-
+<h1>Github</h1>
 <%# app/views/users/new.html.erb %>
 <em><%= notice %></em><br>
 <% if current_user %>
@@ -11,3 +9,14 @@
   You are so not signed in.<br>
   <%= link_to "Sign in with Github", github_login_path %><br>
 <% end %>
+
+
+
+<br><br>
+
+<h1>Facebook</h1>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
